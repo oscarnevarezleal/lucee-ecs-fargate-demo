@@ -25,7 +25,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - ls
+      - docker build -t lucee-app .
     finally:
       - echo This always runs even if the install command fails
   post_build:
