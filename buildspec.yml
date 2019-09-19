@@ -17,6 +17,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
+      - docker help
       - echo "docker login –u User –p $DOCKER_LOGIN_PASSWORD"
     finally:
       - echo This always runs even if the login command fails
